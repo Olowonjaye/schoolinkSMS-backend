@@ -1,10 +1,12 @@
+const cors = require('cors');
+app.use(cors());
 require('dotenv').config();
 const express = require('express');
-const cors = require('cors'); // ✅ Add this
+
 
 const app = express();
 
-app.use(cors()); // ✅ Enable CORS for all domains
+
 app.use(express.json());
 
 app.use('/api/students', require('./routes/Students'));
