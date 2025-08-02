@@ -2,6 +2,7 @@
 
 ## 🎯 What Inspired Us
 
+
 Across Africa, thousands of schools still struggle with unreliable power, limited internet access, and outdated methods of managing student records. As an educator, developer, and digital transformation advocate, I’ve personally seen the challenges rural schools face when trying to digitize operations like result processing, student registration, and parent communication.
 
 This project, **SchooLink**, was born out of the desire to **bridge the digital divide** in education using simple, low-cost, offline technology. The goal is to empower underserved schools with a tool that works **without internet**, runs on **low power devices**, and can even be used in **solar-powered setups**.

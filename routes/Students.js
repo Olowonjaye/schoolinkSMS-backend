@@ -1,15 +1,8 @@
-const router = require('express').Router();
-const Student = require('../models/Student');
+const express = require('express');
+const router = express.Router();
 
-router.post('/', async (req, res) => {
-  const student = new Student(req.body);
-  await student.save();
-  res.status(201).json(student);
-});
-
-router.get('/:class', async (req, res) => {
-  const list = await Student.find({ class: req.params.class });
-  res.json(list);
+router.get('/', (req, res) => {
+  res.json({ message: 'Students route is working' });
 });
 
 module.exports = router;

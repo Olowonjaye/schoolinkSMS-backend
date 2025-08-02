@@ -1,15 +1,8 @@
-const router = require('express').Router();
-const Result = require('../models/Result');
+const express = require('express');
+const router = express.Router();
 
-router.post('/', async (req, res) => {
-  const result = new Result(req.body);
-  await result.save();
-  res.status(201).json(result);
-});
-
-router.get('/:studentId', async (req, res) => {
-  const data = await Result.find({ studentId: req.params.studentId });
-  res.json(data);
+router.get('/', (req, res) => {
+  res.json({ message: 'Students route is working' });
 });
 
 module.exports = router;
