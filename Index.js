@@ -4,7 +4,7 @@
 const express = require('express');
 const cors = require('cors');
 require('dotenv').config(); // Load env early
-const connectDB = require('./db'); // ✅ Import db.js
+const connectDB = require('./db'); // ✅ Handles MongoDB connection
 
 const app = express();
 
@@ -38,5 +38,5 @@ app.use((req, res) => {
 // ============================================
 const port = process.env.PORT || 5001;
 app.listen(port, () => {
-  console.log(`✅ Server running on http://localhost:${port}`);
+  console.log(`✅ Server running on port ${port}`);
 });
